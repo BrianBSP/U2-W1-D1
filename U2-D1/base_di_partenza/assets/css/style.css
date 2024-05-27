@@ -343,6 +343,9 @@ aside div p:last-child {
     display: flex;
     justify-content: space-between;
   }
+  .articoli {
+    width: 33%;
+  }
 }
 
 /* FOOTER */
