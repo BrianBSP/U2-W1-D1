@@ -39,7 +39,7 @@ header div img {
 }
 header nav ul {
   margin: 0;
-  display: inline-flex;
+  /* display: inline-flex; */
 }
 header nav li {
   list-style: none;
@@ -57,27 +57,41 @@ header nav li a::before {
 /* Header desktop. (per mobile e tablet non l'ho modificato. mi sembra uguale) */
 @media screen and (min-width: 1200px) {
   header {
-    background: rgb(0, 160, 198);
-    background: linear-gradient(
-      180deg,
-      rgba(0, 160, 198, 1) 0%,
-      rgba(3, 109, 134, 1) 68%
-    );
-
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-    box-shadow: 0 3px 3px #444;
-    margin-bottom: 1.5em;
-    padding: 2em 1.5em;
-    display: flex;
-    justify-content: space-between;
+    text-align: left;
   }
-  header div {
+  header .head-div,
+  header nav {
+    display: inline-block;
+  }
+  header .head-div:nth-of-type(1) {
+    width: 25%;
+  }
+  header .head-div img {
+    vertical-align: middle;
+  }
+  header .head-div p {
+    margin-bottom: 0;
+    font-size: 1.3em;
+    margin: 0 70px;
+  }
+  header nav ul {
+    margin: 0;
+  }
+  header nav li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  header nav li:last-child {
+    margin-right: 0;
+  }
+  /* display: flex;
+  justify-content: space-between; */
+  /*   header div {
     width: 250px;
     display: contents;
-  }
-  header div img {
+  } */
+  /*   header div img {
     margin-bottom: 20px;
   }
   header div p {
@@ -85,9 +99,9 @@ header nav li a::before {
     margin-top: 25px;
     font-size: 1.5em;
   }
-  header nav {
-    display: inline-flex;
-    margin-left: 270px;
+  header nav { */
+  /* display: inline-flex; */
+  /*  margin-left: 270px;
     margin-top: 25px;
   }
   header nav ul {
@@ -95,7 +109,7 @@ header nav li a::before {
   }
   header nav li {
     list-style: none;
-  }
+  }*/
   header nav li a {
     color: white;
     text-decoration: none;
@@ -107,6 +121,10 @@ header nav li a::before {
   header nav li a::before {
     content: "\22c6\0020";
   }
+  /*
+  .head-div {
+    display: inline-block;
+  } */
 }
 
 /* MAIN */
